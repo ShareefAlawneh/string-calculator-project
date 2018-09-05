@@ -1,0 +1,10 @@
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\bin\Debug\netcoreapp2.1\string-calculator-project.deps.json
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\bin\Debug\netcoreapp2.1\string-calculator-project.runtimeconfig.json
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\bin\Debug\netcoreapp2.1\string-calculator-project.runtimeconfig.dev.json
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\bin\Debug\netcoreapp2.1\string-calculator-project.dll
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\bin\Debug\netcoreapp2.1\string-calculator-project.pdb
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\obj\Debug\netcoreapp2.1\string-calculator-project.fsprojAssemblyReference.cache
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\obj\Debug\netcoreapp2.1\string-calculator-project.AssemblyInfoInputs.cache
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\obj\Debug\netcoreapp2.1\string-calculator-project.AssemblyInfo.fs
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\obj\Debug\netcoreapp2.1\string-calculator-project.dll
+C:\Users\‏‏Msys\Desktop\f#\string-calculator-project\obj\Debug\netcoreapp2.1\string-calculator-project.pdb
