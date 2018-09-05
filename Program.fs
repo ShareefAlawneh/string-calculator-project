@@ -13,5 +13,10 @@ let main argv =
    printf "\n\n---- Starting The Simple String Test ----\n"
    printf "Input: \"1,2\"\n"
    printf "Result:\t"
-   let test2 = "1,2" |> StringNormalizer |> SplitToList |> Add  
+   let test2 = "1,2" |> StringNormalizer |> SplitToList |> Add 
+
+   printf "\n\n---- Starting The \\n Delimeter String Test ----\n"
+   printf "Input: \"1,2\\n3\"\n"
+   printf "Result:\t"
+   let test2 = "1,2\n3" |> StringNormalizer |> SplitToList |> Add  
    0 // return an integer exit code

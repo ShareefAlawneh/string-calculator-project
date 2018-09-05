@@ -6,4 +6,4 @@ module public Calculator =
        stringSeq.Split [|','|] |>  Array.map System.Int32.Parse |>  Array.toList
     let StringNormalizer (stringSeq: string) = 
         if stringSeq.Equals("") then "0" 
-        else stringSeq
+        else stringSeq.Replace("\n",",")
