@@ -1,7 +1,11 @@
 namespace StringCalculator
 module public Calculator = 
        
-    let Add (nums : List<int>) =  List.sum nums |> printf "%A"
+    let isNegative (num: int) = 
+        if num < 0 then raise (System.Exception("Cannot Add A Negative Value")) else true   
+    let Add (nums : List<int>) =  
+        List.filter isNegative nums |> ignore
+        List.sum nums |> printf "%A"
     let SplitToList (stringSeq: string) = 
        stringSeq.Split [|','|] |>  Array.map System.Int32.Parse |>  Array.toList
 
