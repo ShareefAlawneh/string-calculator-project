@@ -13,15 +13,17 @@ module public Calculator =
 
     let NormalizeStringWithSpecialDelimeters (stringSeq: string) = 
         let delimeterEnd = stringSeq.IndexOf("\n")
-        let mutable delimeters = stringSeq.[0..delimeterEnd]
-        let finalString = stringSeq.Remove(0, delimeterEnd+1).Replace("\n", ",")
+        let mutable delimeters = stringSeq.[0..delimeterEnd-1]
+        let mutable finalString = stringSeq.Remove(0, delimeterEnd+1).Replace("\n", ",")
         delimeters <- delimeters.Replace("//","")
         let mutable delimeter = ""
-        for c in delimeters do 
-            if c = '[' then
-               delimeter <- ""
-            elif c = ']' then finalString.Replace(delimeter, ",") |> ignore
-            else delimeter <-  delimeter + string c 
+        if delimeters.Length = 1
+        then finalString <- finalString.Replace(delimeters, ",")
+        else for c in delimeters do 
+                if c = '[' then
+                   delimeter <- ""
+                elif c = ']' then finalString.Replace(delimeter, ",") |> ignore
+                else delimeter <-  delimeter + string c
         finalString
            
     let StringNormalizer (stringSeq: string) = 
