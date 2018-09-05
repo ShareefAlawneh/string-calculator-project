@@ -19,9 +19,14 @@ let main argv =
    printf "Input: \"1,2\\n3\"\n"
    printf "Result:\t"
    let test3 = "1,2\n3" |> StringNormalizer |> SplitToList |> Add  
-   
+
    printf "\n\n---- Starting The Custom Delimeters String Test ----\n"
    printf "Input: \"//[**][&]\\n1,2\\n3\"\n"
    printf "Result:\t"
-   let test4 = "//[**][&]\n1,2\n3" |> StringNormalizer |> SplitToList |> Add  
+   let test4 = "//[**][&]\n1,2\n3" |> StringNormalizer |> SplitToList |> Add 
+   
+   printf "\n\n---- Starting The Thousnd String Test ----\n"
+   printf "Input: \"//[**][&]\\n1,2\\n3,10000\"\n"
+   printf "Result:\t"
+   let test5 = "//[**][&]\n1,2\n3,10000" |> StringNormalizer |> SplitToList |> Add  
    0 // return an integer exit code
