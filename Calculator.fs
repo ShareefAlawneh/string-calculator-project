@@ -1,10 +1,13 @@
 namespace StringCalculator
+open System
 module public Calculator = 
        
     let isNegative (num: int) = 
-        if num < 0 then raise (System.Exception("Cannot Add A Negative Value")) else true         
+        if num < 0 then true else false 
+
     let Add (nums : List<int>) =  
-        List.filter isNegative nums |> ignore
+        let negatives = List.filter isNegative nums
+        if negatives.Length > 0 then raise (System.NotSupportedException(String.Format("Cannot Add A Negative Value {0}", negatives)))
         let LessThan1000 num = if num < 1000 then true else false
         List.sum (List.filter LessThan1000 nums) |> printf "%A" 
 
